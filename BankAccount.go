@@ -15,7 +15,7 @@ func (b BankAccount) Balance() float64 {
 	return b.balance
 }
 
-func (b BankAccount) Custom() Customer {
+func (b BankAccount) Customer() Customer {
 	return b.customer
 }
 

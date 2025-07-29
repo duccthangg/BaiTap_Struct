@@ -19,8 +19,8 @@ func main() {
 	account := NewBankAccount(customer)
 
 	// Hiển thị thông tin
-	fmt.Println("Khách hàng:", account.customer.Name())
-	fmt.Println("Số tài khoản:", account.customer.AccountNumber())
+	fmt.Println("Khách hàng:", account.Customer().Name())
+	fmt.Println("Số tài khoản:", account.Customer().AccountNumber())
 	fmt.Printf("Số dư ban đầu: %.2f\n", account.Balance())
 
 	// Rút tiền vượt quá số dư để test panic + recover
